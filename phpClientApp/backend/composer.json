@@ -1,0 +1,16 @@
+{
+    "name": "hajarhamdouch/my-php-project",
+    "description": "description",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Hajarhamdouch\\MyPhpProject\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "guzzlehttp/guzzle": "^7.9",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}

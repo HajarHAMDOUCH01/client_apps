@@ -1,0 +1,28 @@
+/* Container for the rotating flags */
+.flags-container {
+    display: flex; /* Align flags in a row */
+    justify-content: flex-end; /* Start the flags from the left */
+    align-items: center; /* Align flags vertically */
+    padding: 20px;
+    overflow: hidden; /* Hide overflow to keep flags contained within the container */
+    width: 94%;
+    position: relative;
+  }
+  
+  /* Individual flag styling */
+  .flag {
+    width: 100px; /* Width of each flag */
+    height: auto;
+    margin-right: 10px; /* Space between flags */
+    animation: moveFlags 6s linear infinite; /* Apply the scroll animation */
+  }
+  /* Keyframe for horizontally scrolling flags animation */
+  @keyframes moveFlags {
+    0% {
+      transform: translateX(100%); /* Start from the left */
+    }
+    100% {
+      transform: translateX(-700%); /* Move to the left by 100% of the container's width */
+    }
+  }
+  

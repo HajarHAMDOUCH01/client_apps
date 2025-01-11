@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 90vh; /* Full height of the viewport */
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  max-width: 600px;
+  height: calc(100% - 60px); /* Adjust to make space for the button */
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.chat-window {
+  flex-grow: 1;
+  padding-bottom: 20px;
+}
+
+.message-input-container {
+  display: flex;
+  margin-top: auto; /* Pushes the input container to the bottom */
+  justify-content: space-between;
+}
+
+.message-input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.send-button {
+  width: 15%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.new-chat-button {
+  margin-top: 20px; /* Adds space between the chat container and the button */
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: absolute; /* Position it absolutely */
+  bottom: 20px; /* Place it at the bottom of the page */
+  left: 50%; /* Center horizontally */
+  transform: translateX(-50%); /* Adjust to make sure it is centered */
+}
+
+
+
+/* Chat bubble style */
+.chat-bubble {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 10px;
+  max-width: 80%;
+}
+
+.chat-bubble.user {
+  background-color: #d1e7ff;
+  align-self: flex-end;
+}
+
+.chat-bubble.bot {
+  background-color: #f1f1f1;
+  align-self: flex-start;
+}
+
+.chat-bubble.gemini {
+  background-color: #ffdddd;
+  align-self: center;
+}
+
+/* Input area styling */
+.message-input-container {
+  display: flex;
+  margin-top: auto; /* Pushes the input container to the bottom */
+  justify-content: space-between;
+}
+
+.message-input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.send-button {
+  width: 15%;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
