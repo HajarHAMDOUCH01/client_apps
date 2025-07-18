@@ -45,3 +45,5 @@ phpClientApp/
 - Composer
 - Node.js 16+ (for frontend)
 - Access to the Java REST API
+
+# 🌐 Moroccan Darija Translator - React Native Client
